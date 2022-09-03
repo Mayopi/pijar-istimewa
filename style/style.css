@@ -323,6 +323,10 @@ hr {
 /* responsive */
 
 @media only screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .container.content {
     display: block;
   }
