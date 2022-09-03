@@ -24,7 +24,7 @@ nineteen.addEventListener("click", () => {
   nineteen.textContent = secretKey;
 
   if (secretKey == 19) {
-    location.assign("/secret.html");
+    location.assign("/pijar-istimewa/secret.html");
   }
 });
 
