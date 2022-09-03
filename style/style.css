@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantata+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #f9f9f9;
+  --color-1: #8672af;
+  --color-2: #333;
+  --color-3: #6b52a1;
+  --color-4: #f65a83;
+  --montserrat: "Montserrat", sans-serif;
+  --cantata-one: "Cantata One", serif;
+  --bree-serif: "Bree Serif", serif;
+  --roboto: "Roboto", sans-serif;
+  --inter: "Inter", sans-serif;
+  --patrick-hand: "Patrick Hand", cursive;
+}
+
+body {
+  background: var(--main-color);
+  overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbar {
+  margin-right: 10px;
+  font-size: 1.3em;
+  color: var(--color-2);
+  background: var(--main-color);
+}
+
+.navbar-brand {
+  font-size: 1.3em;
+  font-family: var(--bree-serif);
+  color: var(--color-1);
+  transition: 0.3s;
+}
+
+.navbar-brand:hover {
+  color: var(--color-4);
+  letter-spacing: 5px;
+}
+
+/* end of Navbar */
+
+/* Content */
+
+.container.content {
+  margin-top: 50px;
+  display: flex;
+}
+
+.content-header h1 {
+  color: var(--color-2);
+  font-family: var(--cantata-one);
+  font-weight: bolder;
+  font-size: 5em;
+}
+
+.span-level {
+  color: var(--color-3);
+  margin-left: 50px;
+}
+
+.nineteen {
+  transition: 0.2s;
+  color: var(--color-3);
+  border: none;
+  background: inherit;
+}
+
+.nineteen.active {
+  color: var(--color-4);
+}
+
+hr {
+  margin-top: 20px;
+  border: none;
+  border-bottom: 5px dashed var(--color-3);
+}
+
+.content-body p {
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: var(--montserrat);
+}
+
+.content-body p vivian {
+  color: var(--color-3);
+}
+
+.content-body p span {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--color-4);
+}
+
+#quotes {
+  font-family: var(--cantata-one);
+  font-weight: 500;
+  font-size: 1.4em;
+  width: 70%;
+}
+
+#quotes span {
+  color: var(--color-4);
+  font-size: 1.5em;
+}
+
+.wishes {
+  width: 200px;
+  height: 60px;
+  border-radius: 3px;
+  padding: 5px;
+  background: var(--color-1);
+  border: none;
+  color: var(--main-color);
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  font-family: var(--roboto);
+}
+
+.memories {
+  width: 200px;
+  height: 60px;
+  border-radius: 3px;
+  font-family: var(--roboto);
+  color: var(--color-2);
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  background: var(--main-color);
+  margin-left: 20px;
+}
+
+.memories i {
+  font-size: 1.3em;
+}
+
+.content-footer a {
+  text-decoration: none;
+}
+/* end of Content */
+
+/* wishes content */
+
+.wishes-content {
+  margin-top: 100px;
+}
+
+.wishes-content .row.wishes-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.wishes-content .row.wishes-header h1 {
+  font-weight: 600;
+  color: var(--color-2);
+  font-size: 4em;
+  font-family: var(--patrick-hand);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.card-container div.card-wishes:nth-child(2n + 0) {
+  align-self: flex-end;
+  align-items: flex-end;
+  background: var(--color-4);
+}
+
+.card-wishes {
+  border: none;
+  background: var(--color-3);
+  color: var(--main-color);
+  font-size: 1.5em;
+  padding: 1.3em;
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: 6px 6px 10px var(--color-2);
+}
+
+.card-wishes p {
+  font-family: var(--patrick-hand);
+  font-size: 1.2em;
+}
+
+.card-wishes i {
+  font-size: 1.5em;
+  margin-right: 20px;
+  margin-top: 0;
+}
+
+/* end of wishes content */
+
+/* memories content */
+
+.memories-content {
+  margin-top: 100px;
+  background: var(--color-2);
+  border-radius: 10px;
+}
+
+.memories-content .row.memories-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.memories-content .row.memories-header h1 {
+  font-weight: 600;
+  color: var(--main-color);
+  font-size: 4em;
+  font-family: var(--patrick-hand);
+}
+
+.card-container div.card-memories:nth-child(2n + 0) {
+  align-self: flex-end;
+  align-items: flex-end;
+  background: var(--main-color);
+  color: var(--color-2);
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0px 20px 15px black;
+}
+
+.card-memories:nth-last-child(1) {
+  margin-bottom: 50px;
+}
+
+.card-memories {
+  border: none;
+  color: var(--main-color);
+  font-size: 1.5em;
+  padding: 1.3em;
+  width: 70%;
+  border-radius: 5px;
+}
+
+.card-memories p {
+  font-family: var(--patrick-hand);
+  font-size: 1.2em;
+}
+
+.card-memories i {
+  font-size: 1.5em;
+  margin-right: 20px;
+  margin-top: 0;
+}
+
+/* end of memories content */
+
+/* Countdown */
+
+.container-fluid.countdown {
+  background: var(--color-2);
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  font-family: var(--inter);
+}
+
+.countdown-header {
+  margin-top: 100px;
+}
+
+.countdown-header h1 {
+  font-size: 4em;
+}
+
+.countdown-body {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.countdown-body span {
+  font-size: 5em;
+}
+
+.days,
+.hours,
+.minutes {
+  color: var(--color-1);
+}
+
+.seconds {
+  color: var(--color-4);
+}
+
+.countdown-body p {
+  font-size: 4em;
+}
+
+.countdown-body ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countdown-body ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+
+/* end of Countdown */
+
+/* responsive */
+
+@media only screen and (max-width: 576px) {
+  .container.content {
+    display: block;
+  }
+
+  .content-header h1 span {
+    margin-left: 0px;
+  }
+
+  .col-sm-6 img {
+    width: 100%;
+  }
+
+  .content-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+
+  .wishes {
+    width: 150px;
+    height: 40px;
+  }
+
+  .memories {
+    margin: 0;
+    width: 150px;
+    height: 40px;
+  }
+
+  .container.content .col-sm-6 img {
+    margin-top: 80px;
+  }
+
+  #quotes {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* wishes-content */
+
+  .card-container {
+    align-items: center;
+  }
+
+  .card-container div.card-wishes:nth-child(2n + 0) {
+    align-items: flex-start;
+    align-self: center;
+  }
+
+  .card-wishes {
+    width: 95%;
+  }
+
+  .card-wishes p {
+    font-size: 1em;
+  }
+
+  /* memories content */
+
+  .memories-content {
+    border-radius: 0px;
+  }
+
+  .card-container div.card-memories:nth-child(2n + 0) {
+    align-items: flex-start;
+    align-self: center;
+  }
+
+  .card-memories {
+    width: 95%;
+  }
+
+  .card-memories p {
+    font-size: 1em;
+  }
+
+  /* countdown */
+
+  .container-fluid.countdown {
+    margin-top: 0;
+  }
+
+  .countdown-header h1 {
+    font-size: 2em;
+    font-weight: bolder;
+  }
+
+  .countdown-body {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .countdown-body p {
+    font-size: 2em;
+  }
+
+  .countdown-body span {
+    font-size: 2em;
+  }
+}
