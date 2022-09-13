@@ -30,9 +30,9 @@ nineteen.addEventListener("click", () => {
         new Notification("Easter Eggs", {
           body: "Kamu berhasil masuk",
         });
+        location.assign("/pijar-istimewa/secret.html");
       }
     });
-    location.assign("/pijar-istimewa/secret.html");
   }
 });
 
