@@ -31,8 +31,11 @@ nineteen.addEventListener("click", () => {
           body: "Kamu berhasil masuk",
         });
         location.assign("/pijar-istimewa/secret.html");
+        return;
       }
     });
+    location.assign("/pijar-istimewa/secret.html");
+    return;
   }
 });
 
