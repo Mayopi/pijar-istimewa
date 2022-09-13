@@ -25,17 +25,7 @@ nineteen.addEventListener("click", () => {
 
   if (secretKey == 19) {
     secretKey = 0;
-    Notification.requestPermission().then((perm) => {
-      if (perm == "granted") {
-        new Notification("Easter Eggs", {
-          body: "Kamu berhasil masuk",
-        });
-        location.assign("/pijar-istimewa/secret.html");
-        return;
-      }
-    });
     location.assign("/pijar-istimewa/secret.html");
-    return;
   }
 });
 
