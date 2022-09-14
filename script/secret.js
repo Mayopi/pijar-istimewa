@@ -1,4 +1,5 @@
 const carouselInner = document.querySelector(".carousel-inner");
+const btnILY = document.querySelector(".btn-dark");
 
 const ILY100 = [
   "Ek het jou lief",
@@ -119,3 +120,13 @@ for (let index = 0; index < ILY100.length; index++) {
     header1.style.color = "#f65a83";
   }
 }
+
+btnILY.addEventListener("click", () => {
+  Notification.requestPermission().then((perm) => {
+    if (perm == "granted") {
+      new Notification("I Love You Far More Than 3000", {
+        body: "Aku Mencintaimu Vivian",
+      });
+    }
+  });
+});
